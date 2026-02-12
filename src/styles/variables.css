@@ -1,0 +1,57 @@
+:root {
+  /* Colors */
+  --color-bg-primary: #FAF8F5;
+  --color-bg-secondary: #F5F0E8;
+  --color-bg-card: #FFFFFF;
+  --color-text-primary: #3D3D3D;
+  --color-text-secondary: #6B6B6B;
+  --color-accent: #6B7B5E;
+  --color-accent-dark: #55624A;
+  --color-accent-light: #8B7355;
+  /* Warm Brown for secondary accents */
+  --color-border: #E8E2D9;
+  --color-shadow: rgba(0, 0, 0, 0.08);
+
+  /* Fonts */
+  --font-serif: 'Heebo', 'Frank Ruhl Libre', serif;
+  --font-sans: 'Heebo', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Typography */
+  --font-size-hero: 3.5rem;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-body: 1.125rem;
+  --font-size-caption: 0.875rem;
+
+  /* Layout */
+  --container-max-width: 1200px;
+  --card-radius: 16px;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  direction: rtl;
+  /* Ensure RTL */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  line-height: 1.2;
+}
