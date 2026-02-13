@@ -1,61 +1,71 @@
 .header {
-    padding: 1.5rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: var(--color-bg-primary);
-    /* Slight transparency? */
-    background: rgba(253, 251, 247, 0.95);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-bg-primary);
+  /* Slight transparency? */
+  background: rgba(253, 251, 247, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-text-primary);
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-decoration: none;
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .nav {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-link {
-    color: var(--color-text-secondary);
-    font-size: 1.125rem;
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease;
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--color-text-primary);
+  color: var(--color-text-primary);
 }
 
 .nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-accent);
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
